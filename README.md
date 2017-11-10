@@ -1,5 +1,7 @@
 # broccoli-tee
 
+[![Build Status](https://travis-ci.org/krisselden/broccoli-tee.svg?branch=master)](https://travis-ci.org/krisselden/broccoli-tee)
+
 Tees the outputPath of a Broccoli node to a targetPath.
 
 ## Usage
