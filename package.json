@@ -1,0 +1,34 @@
+{
+  "name": "broccoli-tee",
+  "description": "tee the outputPath of a broccoli node to a targetPath",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kris Selden",
+    "email": "kris.selden@gmail.com"
+  },
+  "scripts": {
+    "prepublish": "rm -rf dist && tsc && cp interface.d.ts dist",
+    "test": "npm run prepublish && qunit dist/test/test.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.d.ts",
+    "dist/index.js",
+    "dist/interface.d.ts"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^8.0.50",
+    "@types/qunit": "^2.0.31",
+    "broccoli-funnel": "^2.0.1",
+    "broccoli-merge-trees": "^2.0.0",
+    "broccoli-test-helper": "^1.2.0",
+    "qunitjs": "^2.4.1",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "tree-sync": "^1.2.2"
+  }
+}
