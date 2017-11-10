@@ -1,7 +1,7 @@
 {
   "name": "broccoli-tee",
   "description": "tee the outputPath of a broccoli node to a targetPath",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Kris Selden",
     "email": "kris.selden@gmail.com"
