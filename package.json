@@ -17,6 +17,14 @@
     "dist/index.js",
     "dist/interface.d.ts"
   ],
+  "homepage": "https://github.com/krisselden/broccoli-tee",
+  "bugs": {
+    "url": "https://github.com/krisselden/broccoli-tee/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krisselden/broccoli-tee.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^8.0.50",

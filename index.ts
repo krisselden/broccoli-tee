@@ -27,11 +27,14 @@ class Tee {
   }
 
   private tee() {
-    const { input, lastOutput, treeSyncs, targetPaths } = this;
-    const { outputPath } = input;
+    const lastOutput = this.lastOutput;
+    const treeSyncs = this.treeSyncs;
+    const targetPaths = this.targetPaths;
+    const outputPath = this.input.outputPath;
 
     // should be used with stable output plugins
     if (outputPath !== this.lastOutput) {
+      this.lastOutput = outputPath;
       treeSyncs.length = 0;
     }
 
