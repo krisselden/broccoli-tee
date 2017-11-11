@@ -8,7 +8,9 @@
   },
   "scripts": {
     "prepublish": "rm -rf dist && tsc && cp interface.d.ts dist",
-    "test": "npm run prepublish && qunit dist/test/test.js"
+    "tslint": "tslint -p tsconfig.json",
+    "qunit": "qunit dist/test/test.js",
+    "test": "yarn run prepublish && yarn run tslint && yarn run qunit"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
