@@ -60,6 +60,7 @@ function tee(input: IBroccoliNode, targetPath: string) {
     contextMap.set(input, ctx);
   }
   ctx.addTarget(targetPath);
+  return input;
 }
 
 export = tee;

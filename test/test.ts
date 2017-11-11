@@ -43,9 +43,8 @@ QUnit.module('BroccoliDebug', (hooks) => {
 
   QUnit.test('it tees output', async (assert) => {
     const node = new Funnel(input.path(), {});
-    output = createBuilder(node);
-
-    tee(node, target.path('foo'));
+    output = createBuilder(
+      tee(node, target.path('foo')));
 
     const expected: any = {
       herp: {
