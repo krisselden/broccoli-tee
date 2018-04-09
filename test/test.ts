@@ -23,7 +23,7 @@ class TrackedTempDir {
   }
 }
 
-QUnit.module('BroccoliDebug', (hooks) => {
+QUnit.module('BroccoliTee', (hooks) => {
   let input: TempDir;
   let target: Output;
   let output: Output;
